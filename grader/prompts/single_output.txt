@@ -65,4 +65,7 @@ JSON Response: {"score": 82.0}
 TRAJECTORY TO EVALUATE:
 {trajectory}
 
+SIMILAR TRAJECTORIES (smaller distance = more similar):
+{similar_trajectories}
+
 RESPONSE (JSON only):

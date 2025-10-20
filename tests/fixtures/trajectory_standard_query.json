@@ -1,0 +1,27 @@
+{
+  "id": "traj-005-standard-query",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the weather today?"
+    },
+    {
+      "role": "assistant",
+      "content": "I'll check the weather for you.",
+      "tool_calls": [
+        {
+          "id": "call_005",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{\"location\": \"current\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "It's sunny with a temperature of 72°F."
+    }
+  ]
+}

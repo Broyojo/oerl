@@ -1,0 +1,27 @@
+{
+  "id": "traj-002-mundane-task",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Add two numbers together."
+    },
+    {
+      "role": "assistant",
+      "content": "I'll add the numbers.",
+      "tool_calls": [
+        {
+          "id": "call_002",
+          "type": "function",
+          "function": {
+            "name": "add",
+            "arguments": "{\"a\": 5, \"b\": 3}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "The result is 8."
+    }
+  ]
+}

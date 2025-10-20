@@ -15,7 +15,7 @@ class Message(BaseModel):
 
 
 class Trajectory(BaseModel):
-    id: Optional[str] = None
+    id: str
     messages: List[Message]
 
 
@@ -23,3 +23,4 @@ class GradingResult(BaseModel):
     trajectory_id: str
     grader_model: str
     score: float
+    reasoning: str
